@@ -42,7 +42,7 @@ public:
     void preAppSpecialize(AppSpecializeArgs *args) override {
         const char *process = api->getJniEnv()->GetStringUTFChars(args->nice_name, nullptr);
         // !!! GANTI "com.example.game" dengan package name game kamu !!!
-        if (process && std::string(process) == "com.example.game") {
+        if (process && std::string(process) == "com.heliogames.westland") {
             enable_patch = true;
         }
         api->getJniEnv()->ReleaseStringUTFChars(args->nice_name, process);
