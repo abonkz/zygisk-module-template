@@ -27,5 +27,4 @@ jobs:
           path: |
             out/*.zip
             app/build/outputs/apk/release/*.apk
-            app/build/outputs/bundle/release/*.aab
-            
+            app/build/outputs/zip/release/*.zip
